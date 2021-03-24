@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Header/Header'
 import './App.css'
+import ResultsContainer from '../ResultsContainer/ResultsContainer'
 import SearchBox from '../SearchBox/SearchBox';
 
 const name = require('@rstacruz/startup-name-generator');
@@ -23,16 +24,15 @@ class App extends React.Component {
         });
     };
 
-  render() {
-return (
-<div>
-  <Header
-   headerExpanded={this.state.headerExpanded} 
-   headTitle={this.state.headerText}/>    
-  <SearchBox onInputChange={this.handleInputChange}/>
-</div>
-);
-}
+ render() {
+        return (
+            <div className="app-container">
+                <Header expandedHeader={this.state.expandedHeader} />
+                <SearchBox onInputChange={this.handleSearch} />
+                <ResultsContainer suggestedNames={this.state.suggestedNames} />
+            </div>
+        );
+    }
 }
 
 
