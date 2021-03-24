@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css';
 import icon from './first.svg';
 
-const Header =()=>{
+const Header =(props)=>{
     return( 
         <div className="head-container">
         <img src={icon}
@@ -13,7 +13,7 @@ const Header =()=>{
         alt="HeaderImage" 
         className="head-img" /> */}
 
-        <h1 className="head-text">Name it</h1>
+        <h1 className="head-text">{props.headtitle}</h1>
         </div>
     );
 }
