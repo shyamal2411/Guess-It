@@ -3,6 +3,8 @@ import Header from '../Header/Header'
 import './App.css'
 import SearchBox from '../SearchBox/SearchBox';
 
+const name = require('@rstacruz/startup-name-generator');
+
 class App extends React.Component {
 
     constructor() {
@@ -10,14 +12,24 @@ class App extends React.Component {
 
       this.state = {
       headerText:'Guess it!',
+      headerExpanded: true
     };
   }
+
+      handleInputChange = (inputText) => {
+        this.setState({
+            headerExpanded: !inputText,
+            suggestedNames: inputText ? name(inputText) : [],
+        });
+    };
 
   render() {
 return (
 <div>
-  <Header headtitle={this.state.headerText}/>    
-  <SearchBox/>
+  <Header
+   headerExpanded={this.state.headerExpanded} 
+   headTitle={this.state.headerText}/>    
+  <SearchBox onInputChange={this.handleInputChange}/>
 </div>
 );
 }
