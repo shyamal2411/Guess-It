@@ -5,10 +5,15 @@ const nameCheapUrl = "https://www.youtube.com/redirect?event=video_description&r
 
 const NameCard= ({suggestedName}) =>{
     return (
-       <a className="card-link" href= {`${nameCheapUrl}${suggestedName}`}>
+       <a 
+       target="_blank"
+            href={`${nameCheapUrl}${suggestedName}`}
+            rel="noreferrer"
+            className="result-name-link"
+        >
             <div className="result-name-card">
-            <p className="result-name">{suggestedName}</p>
-        </div>
+                <p className="result-name">{suggestedName}</p>
+            </div>
        </a>
     );
 };
