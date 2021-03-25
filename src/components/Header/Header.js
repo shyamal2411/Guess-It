@@ -24,7 +24,7 @@ const Header =({headTitle,headerExpanded})=>{
                         : 'head-text-contracted'
                 }`}
             >
-                {headTitle}
+                Guess It!
             </h1>
         </div>
     );
