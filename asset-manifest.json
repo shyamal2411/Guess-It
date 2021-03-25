@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Guess-It/static/css/main.b0c8f334.chunk.css",
+    "main.js": "/Guess-It/static/js/main.37aae5ca.chunk.js",
+    "main.js.map": "/Guess-It/static/js/main.37aae5ca.chunk.js.map",
+    "runtime-main.js": "/Guess-It/static/js/runtime-main.04096d0a.js",
+    "runtime-main.js.map": "/Guess-It/static/js/runtime-main.04096d0a.js.map",
+    "static/js/2.89883ad8.chunk.js": "/Guess-It/static/js/2.89883ad8.chunk.js",
+    "static/js/2.89883ad8.chunk.js.map": "/Guess-It/static/js/2.89883ad8.chunk.js.map",
+    "static/js/3.47d1355e.chunk.js": "/Guess-It/static/js/3.47d1355e.chunk.js",
+    "static/js/3.47d1355e.chunk.js.map": "/Guess-It/static/js/3.47d1355e.chunk.js.map",
+    "index.html": "/Guess-It/index.html",
+    "static/css/main.b0c8f334.chunk.css.map": "/Guess-It/static/css/main.b0c8f334.chunk.css.map",
+    "static/js/2.89883ad8.chunk.js.LICENSE.txt": "/Guess-It/static/js/2.89883ad8.chunk.js.LICENSE.txt",
+    "static/media/first.2c0445ca.svg": "/Guess-It/static/media/first.2c0445ca.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04096d0a.js",
+    "static/js/2.89883ad8.chunk.js",
+    "static/css/main.b0c8f334.chunk.css",
+    "static/js/main.37aae5ca.chunk.js"
+  ]
+}
